@@ -4,6 +4,6 @@ type HeadingProps = {
 
 export default function Heading(props: HeadingProps) {
   return (
-    <h2>Heading main Title: {props.children}</h2>
+    <h2>{props.children}</h2>
   )
 }
