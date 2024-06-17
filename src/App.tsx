@@ -5,7 +5,7 @@ function App() {
 
   return (
     <div className='App'>
-      <Greet unreadMessageCount={5} name="Shourav" />
+      <Greet unreadMessageCount={5} name="Shourav" isLoggedIn={true} />
     </div>
   )
 }
