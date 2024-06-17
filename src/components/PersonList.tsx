@@ -18,3 +18,4 @@ export default function PersonList(props: NameListProps) {
     </div>
   )
 }
+

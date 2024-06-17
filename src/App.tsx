@@ -1,10 +1,11 @@
 import "./App.css";
-import Greet from "./components/Greet";
+/* import Greet from "./components/Greet";
 import Person from "./components/Person";
-import PersonList from "./components/PersonList";
+import PersonList from "./components/PersonList"; */
+import Status from "./components/Status";
 
 function App() {
-  const personName = {
+/*   const personName = {
     firstName: "MD",
     lastName: "Al Amin",
   };
@@ -12,23 +13,26 @@ function App() {
   const nameList = [
     {
       firstName: "MD",
-     lastName: "Al Amin",
+      lastName: "Al Amin",
     },
     {
       firstName: "Sakal",
-     lastName: "Sarkar",
+      lastName: "Sarkar",
     },
     {
       firstName: "Shourav",
-     lastName: "Raj",
+      lastName: "Raj",
     },
   ];
-
+ */
   return (
     <div className="App">
-      <Greet unreadMessageCount={5} name="Shourav" isLoggedIn={true} />
+     {/*  <Greet unreadMessageCount={5} name="Shourav" isLoggedIn={true} />
       <Person name={personName} />
-      <PersonList names={nameList} />
+      <PersonList names={nameList} /> */}
+
+      {/* --------------- */}
+      <Status status="success" />
     </div>
   );
 }
