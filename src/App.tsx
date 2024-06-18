@@ -1,6 +1,7 @@
 import "./App.css";
-import { Button } from "./components/Button";
-import LoggedIn from "./components/state/LoggedIn";
+import User from "./components/state/User";
+/* import { Button } from "./components/Button"; */
+/* import LoggedIn from "./components/state/LoggedIn"; */
 /* import { Container } from "./components/Containser"; */
 /* import { Input } from "./components/Input"; */
 /* import Heading from "./components/Heading";
@@ -48,10 +49,10 @@ function App() {
 
 
       {/* ----------------------Typing Event Props --------------- */}
-      <Button handleClick={(event, id) => {
+      {/* <Button handleClick={(event, id) => {
         console.log("Button Clicked", event, id);
         
-      }}></Button>
+      }}></Button> */}
 
      {/*  <Input value="" handleChange={(event) => console.log(event)
       } /> */}
@@ -64,7 +65,11 @@ function App() {
 
      {/* -------------------Typing React Hooks ----------------------- */}
 
-     <LoggedIn/>
+     {/* <LoggedIn/> */}
+
+     {/* -------------------Typing React Hook (Advanced) -------------- */}
+      
+      <User/>
 
     </div>
   );
