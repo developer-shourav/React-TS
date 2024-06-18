@@ -1,6 +1,7 @@
 import "./App.css";
 import { Button } from "./components/Button";
-import { Input } from "./components/Input";
+import { Container } from "./components/Containser";
+/* import { Input } from "./components/Input"; */
 /* import Heading from "./components/Heading";
 import Oscar from "./components/Oscar"; */
 /* import Greet from "./components/Greet";
@@ -51,8 +52,15 @@ function App() {
         
       }}></Button>
 
-      <Input value="" handleChange={(event) => console.log(event)
-      } />
+     {/*  <Input value="" handleChange={(event) => console.log(event)
+      } /> */}
+
+
+      {/* ------------------Style Props------------------- */}
+
+      <Container cssStyle={{border:"2px dotted black", minWidth:"500px", minHeight:"300px", borderRadius:"20px", padding:"60px 0 0 0" }} />
+
+
     </div>
   );
 }
