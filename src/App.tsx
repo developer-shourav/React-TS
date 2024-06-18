@@ -1,6 +1,7 @@
 import "./App.css";
-import Heading from "./components/Heading";
-import Oscar from "./components/Oscar";
+import { Button } from "./components/Button";
+/* import Heading from "./components/Heading";
+import Oscar from "./components/Oscar"; */
 /* import Greet from "./components/Greet";
 import Person from "./components/Person";
 import PersonList from "./components/PersonList"; */
@@ -36,11 +37,18 @@ function App() {
       {/* --------------- */}
       {/* <Status status="success" /> */}
 
-      <Heading>Heading main Title: Welcome To React TS Course</Heading>
+      {/* <Heading>Heading main Title: Welcome To React TS Course</Heading>
 
       <Oscar>
         <Heading>The Golden Golden Kela Awards Goes of Jayed Kan</Heading>
-      </Oscar>
+      </Oscar> */}
+
+
+      {/* ----------------------Typing Event Props --------------- */}
+      <Button handleClick={() => {
+        console.log("Button Clicked");
+        
+      }}></Button>
     </div>
   );
 }
