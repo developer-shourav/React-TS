@@ -45,8 +45,8 @@ function App() {
 
 
       {/* ----------------------Typing Event Props --------------- */}
-      <Button handleClick={() => {
-        console.log("Button Clicked");
+      <Button handleClick={(event, id) => {
+        console.log("Button Clicked", event, id);
         
       }}></Button>
     </div>
