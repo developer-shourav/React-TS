@@ -1,9 +1,6 @@
-type PersonProps = {
-  name: {
-    firstName: string;
-    lastName: string;
-  };
-};
+/* ---------------Example of Import Custom Types ------------ */
+import { PersonProps } from "./Person.type";
+
 
 export default function Person(props: PersonProps) {
   return (
