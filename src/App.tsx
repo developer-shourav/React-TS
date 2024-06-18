@@ -1,6 +1,7 @@
 import "./App.css";
 import { Button } from "./components/Button";
-import { Container } from "./components/Containser";
+import LoggedIn from "./components/state/LoggedIn";
+/* import { Container } from "./components/Containser"; */
 /* import { Input } from "./components/Input"; */
 /* import Heading from "./components/Heading";
 import Oscar from "./components/Oscar"; */
@@ -58,8 +59,12 @@ function App() {
 
       {/* ------------------Style Props------------------- */}
 
-      <Container cssStyle={{border:"2px dotted black", minWidth:"500px", minHeight:"300px", borderRadius:"20px", padding:"60px 0 0 0" }} />
+     {/*  <Container cssStyle={{border:"2px dotted black", minWidth:"500px", minHeight:"300px", borderRadius:"20px", padding:"60px 0 0 0" }} /> */}
 
+
+     {/* -------------------Typing React Hooks ----------------------- */}
+
+     <LoggedIn/>
 
     </div>
   );
