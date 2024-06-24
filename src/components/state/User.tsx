@@ -24,8 +24,8 @@ export default function User() {
     <div>
       <button onClick={handleLogin}>Login</button>
       <button onClick={handleLogOut}>Log Out</button>
-      {user?.name && <p>User Name is {user?.name}</p>}
-      {user?.email && <p>User Email is {user?.email}</p>}
+      {user?.name && <p>User Name is {user.name}</p>}
+      {user?.email && <p>User Email is {user.email}</p>}
     </div>
   );
 }

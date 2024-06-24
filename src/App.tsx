@@ -1,5 +1,6 @@
 import "./App.css";
-import User from "./components/state/User";
+import Counter from "./components/Counter";
+/* import User from "./components/state/User"; */
 /* import { Button } from "./components/Button"; */
 /* import LoggedIn from "./components/state/LoggedIn"; */
 /* import { Container } from "./components/Containser"; */
@@ -63,13 +64,16 @@ function App() {
      {/*  <Container cssStyle={{border:"2px dotted black", minWidth:"500px", minHeight:"300px", borderRadius:"20px", padding:"60px 0 0 0" }} /> */}
 
 
-     {/* -------------------Typing React Hooks ----------------------- */}
+     {/* -------------------Typing React Hooks (useState) ----------------------- */}
 
      {/* <LoggedIn/> */}
 
-     {/* -------------------Typing React Hook (Advanced) -------------- */}
+     {/* -------------------Typing React Hook (useState) (Advanced) -------------- */}
       
-      <User/>
+     {/*  <User/> */}
+
+     {/* -------------------Typing React Hook (useReducer) (Advanced) -------------- */}
+     <Counter/>
 
     </div>
   );
