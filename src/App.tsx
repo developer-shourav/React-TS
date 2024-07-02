@@ -1,5 +1,7 @@
 import "./App.css";
-import Counter from "./components/Counter";
+import Box from "./components/context/Box";
+import { ThemeContextProvider } from "./components/context/ThemeContext";
+/* import Counter from "./components/Counter"; */
 /* import User from "./components/state/User"; */
 /* import { Button } from "./components/Button"; */
 /* import LoggedIn from "./components/state/LoggedIn"; */
@@ -73,7 +75,13 @@ function App() {
      {/*  <User/> */}
 
      {/* -------------------Typing React Hook (useReducer) (Advanced) -------------- */}
-     <Counter/>
+     {/* <Counter/> */}
+
+
+     {/* -------------------Typing React Hook (useContext) (Advanced) -------------- */}
+     <ThemeContextProvider>
+       <Box/>
+     </ThemeContextProvider>
 
     </div>
   );
