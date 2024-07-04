@@ -1,6 +1,8 @@
 import "./App.css";
-import { UserContextProvider } from "./components/context/UserContext";
-import User from "./components/context/User";
+import { Private } from "./components/auth/Private";
+import { Profile } from "./components/auth/Profile";
+/* import { UserContextProvider } from "./components/context/UserContext";
+import User from "./components/context/User"; */
 /* import Box from "./components/context/Box";
 import { ThemeContextProvider } from "./components/context/ThemeContext"; */
 /* import Counter from "./components/Counter"; */
@@ -87,9 +89,13 @@ function App() {
 
      {/* -------------------Typing React Hook (useContext) (Advanced) With Future Value-------------- */}
 
-     <UserContextProvider>
+   {/*   <UserContextProvider>
       <User/>
-     </UserContextProvider>
+     </UserContextProvider> */}
+
+
+      {/* -------------------Typing Component Props (Advanced) -------------- */}
+      <Private isLoggedIn={true} component={Profile}></Private>
 
     </div>
   );
