@@ -1,6 +1,8 @@
 import "./App.css";
-import Box from "./components/context/Box";
-import { ThemeContextProvider } from "./components/context/ThemeContext";
+import { UserContextProvider } from "./components/context/UserContext";
+import User from "./components/context/User";
+/* import Box from "./components/context/Box";
+import { ThemeContextProvider } from "./components/context/ThemeContext"; */
 /* import Counter from "./components/Counter"; */
 /* import User from "./components/state/User"; */
 /* import { Button } from "./components/Button"; */
@@ -79,9 +81,15 @@ function App() {
 
 
      {/* -------------------Typing React Hook (useContext) (Advanced) -------------- */}
-     <ThemeContextProvider>
+    {/*  <ThemeContextProvider>
        <Box/>
-     </ThemeContextProvider>
+     </ThemeContextProvider> */}
+
+     {/* -------------------Typing React Hook (useContext) (Advanced) With Future Value-------------- */}
+
+     <UserContextProvider>
+      <User/>
+     </UserContextProvider>
 
     </div>
   );
