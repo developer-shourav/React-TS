@@ -1,5 +1,6 @@
 import "./App.css";
-import { RandomNumbers } from "./components/restriction/RandomNumbers";
+import { Toast } from "./components/templateLiterals/Toast";
+/* import { RandomNumbers } from "./components/restriction/RandomNumbers"; */
 /* import { List } from "./components/generics/List"; */
 /* import { Private } from "./components/auth/Private";
 import { Profile } from "./components/auth/Profile"; */
@@ -126,7 +127,12 @@ function App() {
 
       {/* ------------------- ---------Typing Restricting Props (Advanced) ------------------ */}
 
-       <RandomNumbers value={45} isPositive />
+       {/* <RandomNumbers value={45} isPositive /> */}
+
+
+     {/* -----------------Typing Template Literals and Exclude (Advanced) ------------------ */}
+
+     <Toast position="center" />
 
 
 
