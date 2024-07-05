@@ -1,5 +1,6 @@
 import "./App.css";
-import { List } from "./components/generics/List";
+import { RandomNumbers } from "./components/restriction/RandomNumbers";
+/* import { List } from "./components/generics/List"; */
 /* import { Private } from "./components/auth/Private";
 import { Profile } from "./components/auth/Profile"; */
 /* import { UserContextProvider } from "./components/context/UserContext";
@@ -104,7 +105,7 @@ function App() {
 
 
       {/* -------Array List----- */}
-      <List
+      {/* <List
         items={[
           { id: 1,
             first: "Shourav",
@@ -120,7 +121,21 @@ function App() {
           },
         ]}
         onClick={(item) => console.log(item)}
-      ></List>
+      ></List> */}
+
+
+      {/* ------------------- ---------Typing Restricting Props (Advanced) ------------------ */}
+
+       <RandomNumbers value={45} isPositive />
+
+
+
+
+
+
+
+
+
     </div>
   );
 }
