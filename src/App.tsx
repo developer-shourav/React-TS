@@ -1,5 +1,7 @@
 import "./App.css";
-import { Toast } from "./components/templateLiterals/Toast";
+import { CustomButton } from "./components/html/Button";
+import { CustomInput } from "./components/html/Input";
+/* import { Toast } from "./components/templateLiterals/Toast"; */
 /* import { RandomNumbers } from "./components/restriction/RandomNumbers"; */
 /* import { List } from "./components/generics/List"; */
 /* import { Private } from "./components/auth/Private";
@@ -132,7 +134,18 @@ function App() {
 
      {/* -----------------Typing Template Literals and Exclude (Advanced) ------------------ */}
 
-     <Toast position="center" />
+    {/*  <Toast position="left-bottom" /> */}
+
+    
+    
+    {/* ---------------------- Typing Wrapping HTML Elements ---------------------------- */}
+
+    <CustomButton variant="primary" onClick={() => console.log('Clicked')}>
+      Primary Button
+    </CustomButton>
+    
+
+
 
 
 
