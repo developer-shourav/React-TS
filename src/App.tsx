@@ -1,5 +1,6 @@
 import "./App.css";
-import { CustomButton } from "./components/html/Button";
+import { Text } from "./components/polymorphic/Text";
+/* import { CustomButton } from "./components/html/Button"; */
 /* import { CustomInput } from "./components/html/Input"; */
 /* import { Toast } from "./components/templateLiterals/Toast"; */
 /* import { RandomNumbers } from "./components/restriction/RandomNumbers"; */
@@ -106,7 +107,6 @@ function App() {
 
       <List items={[1, 2, 3]} onClick={(item) => console.log(item)}></List> */}
 
-
       {/* -------Array List----- */}
       {/* <List
         items={[
@@ -126,35 +126,31 @@ function App() {
         onClick={(item) => console.log(item)}
       ></List> */}
 
-
       {/* ------------------- ---------Typing Restricting Props (Advanced) ------------------ */}
 
-       {/* <RandomNumbers value={45} isPositive /> */}
+      {/* <RandomNumbers value={45} isPositive /> */}
 
+      {/* -----------------Typing Template Literals and Exclude (Advanced) ------------------ */}
 
-     {/* -----------------Typing Template Literals and Exclude (Advanced) ------------------ */}
+      {/*  <Toast position="left-bottom" /> */}
 
-    {/*  <Toast position="left-bottom" /> */}
+      {/* ---------------------- Typing Wrapping HTML Elements ---------------------------- */}
 
-    
-    
-    {/* ---------------------- Typing Wrapping HTML Elements ---------------------------- */}
-
-    <CustomButton variant="primary" onClick={() => console.log('Clicked')}>
+      {/*   <CustomButton variant="primary" onClick={() => console.log('Clicked')}>
       Primary Button
-    </CustomButton>
-    
+    </CustomButton> */}
 
+      {/* ---------------------- Typing Polymorphic Components ---------------------------- */}
 
-
-
-
-
-
-
-
-
-
+      <Text as="h1" size="lg">
+        Heading
+      </Text>
+      <Text as="p" size="md">
+        Paragraph
+      </Text>
+      <Text as="label" htmlFor='email' size="sm" color="secondary">
+        Label Text
+      </Text>
     </div>
   );
 }
