@@ -1,6 +1,6 @@
 import "./App.css";
 import { CustomButton } from "./components/html/Button";
-import { CustomInput } from "./components/html/Input";
+/* import { CustomInput } from "./components/html/Input"; */
 /* import { Toast } from "./components/templateLiterals/Toast"; */
 /* import { RandomNumbers } from "./components/restriction/RandomNumbers"; */
 /* import { List } from "./components/generics/List"; */
